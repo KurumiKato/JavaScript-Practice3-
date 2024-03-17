@@ -10,8 +10,8 @@
   }
 
   // 2
-  scores.forEach((index) => {
-    console.log(index);
+  scores.forEach((score,index) => {
+    console.log(`Score ${index} : ${score}`);
   });
 }
 
@@ -95,7 +95,8 @@
   console.log(Math.round(avg));
 
   // 16
-  console.log((Math.floor(avg * 1000)) / 1000);
+  // console.log((Math.floor(avg * 1000)) / 1000);
+  console.log(avg.toFixed(3));
 }
 
 // 17
